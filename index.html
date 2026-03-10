@@ -1,71 +1,94 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jayendra - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background: #f4f7f6; color: #333; }
-        
-        /* Navbar */
-        nav { background: #2c3e50; padding: 1rem; display: flex; justify-content: center; gap: 20px; }
-        nav a { color: white; text-decoration: none; font-weight: 600; }
-
-        /* Header */
-        header { background: linear-gradient(135deg, #2c3e50, #3498db); color: white; padding: 50px 20px; text-align: center; }
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; margin-bottom: 15px; }
-
-        /* Container */
-        .container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; }
-        h2 { margin-top: 20px; color: #2c3e50; }
-
-        /* Contact Form */
-        form { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
-        input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-        button { padding: 10px; background: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; }
-
-        /* Footer Icons */
-        .social-links { text-align: center; margin-top: 20px; font-size: 1.5rem; }
-        .social-links a { margin: 0 10px; color: #2c3e50; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Website</title>
+  <meta name="description" content="A simple starter website." />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --text:#e6eef8;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#071024 70%);color:var(--text)}
+    .container{max-width:1000px;margin:40px auto;padding:28px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:var(--radius);box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-weight:600}
+    h1{font-size:28px;margin:18px 0 6px}
+    p.lead{color:var(--muted);margin:0 0 22px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+    .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:#032; border-radius:8px;font-weight:700;text-decoration:none}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.logo{width:40px;height:40px}}
+  </style>
 </head>
 <body>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
+  <main class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">J</div>
+        <div>
+          <div style="font-weight:800">jayendra mahecha</div>
+          <div style="font-size:12px;color:var(--muted)">never give up</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact</a>
-    </nav>
-
-    <header id="home">
-        <img src="profile.jpg" alt="Profile" class="profile-img">
-        <h1>Jayendra Mahecha</h1>
-        <p>Web Developer | Designer</p>
+      </nav>
     </header>
 
-    <div class="container">
-        <h2 id="projects">My Projects</h2>
-        <p>Yahan mere banaye huye projects hain:</p>
-        <ul>
-            <li>Project 1: Professional Portfolio</li>
-            <li>Project 2: Responsive Landing Page</li>
-        </ul>
+    <section style="margin-top:18px" id="hero">
+      <h1>this website start now</h1>
+      <p class="lead">this website is where your journey begins.</p>
+      <a class="cta" href="#contact">Get started →</a>
+    </section>
 
-        <h2 id="contact">Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Aapka Naam" required>
-            <input type="email" placeholder="Aapka Email" required>
-            <textarea placeholder="Aapka Message" rows="4"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-        <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+    <section class="grid" style="margin-top:22px">
+      <div>
+        <div class="card">
+          <h2 id="about">About</h2>
+          <p style="color:var(--muted)"> my first website are my first missions this is my hard work .</p>
         </div>
-    </div>
+
+        <div class="card" style="margin-top:14px" id="work">
+          <h2>Recent work</h2>
+          <ul style="color:var(--muted);padding-left:18px;margin:8px 0 0">
+            <li>Project A — my first website</li>
+            <li>Project B — my portfolio project</li>
+            <li>Project C — client work</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Contact</h3>
+          <p style="color:var(--muted)">Email: <a href="mailto:you@example.com" style="color:var(--text)">jayendramahecha09@gmail.com</a></p>
+          <p style="color:var(--muted);margin-top:8px">Or follow me:</p>
+          <p style="margin-top:8px">
+            <a href="#" style="color:var(--muted);text-decoration:none;margin-right:10px">Twitter</a>
+            <a href="#" style="color:var(--muted);text-decoration:none;margin-right:10px">GitHub</a>
+            <a href="#" style="color:var(--muted);text-decoration:none">LinkedIn</a>
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3>Quick actions</h3>
+          <p style="color:var(--muted)">Try these:</p>
+          <p style="margin-top:10px"><a class="cta" href="#contact">Hire me</a></p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      <div>Made with ♥ — jp Website • 2026</div>
+    </footer>
+  </main>
 </body>
 </html>
