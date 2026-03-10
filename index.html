@@ -1,53 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE <!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Website</title>
+    <title>Jayendra - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* General Styles */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; line-height: 1.6; background: #f4f7f6; color: #333; }
         
-        /* Navigation */
-        nav { background: #974a4a; padding: 1rem; text-align: center; }
-        nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-        
+        /* Navbar */
+        nav { background: #2c3e50; padding: 1rem; display: flex; justify-content: center; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: #3498db; }
+
         /* Header */
-        header { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
+        header { background: linear-gradient(135deg, #2c3e50, #34495e); color: white; padding: 60px 20px; text-align: center; }
+        .profile-img { width: 160px; height: 160px; border-radius: 50%; border: 5px solid white; margin-bottom: 15px; }
+
+        /* Sections */
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; display: inline-block; }
         
-        /* Profile Image */
-        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #333333; margin: 20px auto; display: block; }
-        
-        /* Section */
-        .container { padding: 20px; text-align: center; max-width: 800px; margin: auto; }
-        
-        /* Mobile ke liye settings (Responsive) */
-        @media (max-width: 600px) {
-            nav a { display: block; margin: 10px 0; }
-            h1 { font-size: 24px; }
-        }
+        /* Icons Section */
+        .skills { display: flex; justify-content: space-around; margin-top: 20px; font-size: 2rem; color: #3498db; }
+        .skill-item { text-align: center; }
+        .skill-item p { font-size: 1rem; color: #555; }
     </style>
 </head>
 <body>
-
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-user"></i> About</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Projects</a>
     </nav>
-
     <header>
-        <h1>Jayendra's Website</h1>
-        <p>Welcome to my professional portfolio</p>
-    </header>
-
-    <div class="container">
         <img src="profile.jpg" alt="Profile" class="profile-img">
-        
+        <h1>Jayendra Mahecha</h1>
+        <p>Web Developer & Designer</p>
+    </header>
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-item"><i class="fab fa-html5"></i><p>HTML</p></div>
+            <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+            <div class="skill-item"><i class="fab fa-js"></i><p>JS</p></div>
+        </div>
+        <br>
         <h2>About Me</h2>
-        <p>Main ek aspiring web developer hoon. Yeh website har device par responsive hai.</p>
+        <p>Main ek professional web developer hoon. Main modern aur responsive websites banane mein maahir hoon. Mujhe nayi cheezein seekhna bahut pasand hai.</p>
     </div>
-
 </body>
 </html>
